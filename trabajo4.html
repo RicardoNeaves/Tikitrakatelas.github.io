@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRABAJO 4</title>
+</head>
+<body style="background-color: black ; color: white;">
+
+<h1>LECCION 2</h1>
+<hr>
+<h2>El papel del archivo de rest CSS</h2>
+<p>El papel del archivo de reset CSS
+
+    Antes de empezar a crear un diseño visual de página Web vamos a ver cómo se utiliza un archivo de reset de CSS. Todos los elementos HTML se muestran en pantalla utilizando los estilos por defecto que aplica cada navegador. 
+    Todos los elementos HTML incluyen márgenes por defecto. Aunque los navegadores web actuales tienen una calidad muy superior a los antiguos, conviene saber que cada motores de restitución empleado por los navegadores aplica sus propias reglas para mostrar los elementos en pantalla. 
+    
+    Ampliación de la hoja de estilos de reset
+     
+    Eric Meyer fue el primer desarrollador que preparó hojas de estilo de reset, que después distribuyó para uso público. 
+    Muchos diseñadores se preparan sus propias hojas de estilos de reset para resolver sus propias necesidades. Por ejemplo, si la familia de fuentes que utilizas con más frecuencia es Verdana, puedes añadir esta regla al estilo del elemento body. Si te gusta poner más espacio de separación entre párrafos, puedes fijar el valor estándar de tamaño de línea que te parezca más adecuado. Lo que importa es disponer de una serie de reglas coherentes que se puedan utilizar para empezar cualquier proyecto de inmediato.
+    EL uso de hojas de reset CSS puede tener algunas desventajas, sobre todo para los neófitos: tendrán que recordar constantemente que están utilizando dicha hoja de estilos y deben tener en cuenta cómo afectará a los distintos elementos del sitio web. Si estamos aplicando la hoja de reset a todo el sitio, algunos de sus efectos pueden resultar sorprendentes, sobre todo con elementos con los que no estamos especialmente familiarizados.
+    
+    Introducción a las distintas opciones de presentación de páginas
+    
+    Antes de la estructura visual de nuestras páginas web tenemos que decidir unas cuantas cosas. Lo primero es qué anchura va a tener. Hay dos categorías principales de estructuras en base a su anchura: las de anchura fija y las de ancho variable. En las estructuras de ancho fijo todos los elementos de la página se anidan dentro de un contenedor que tiene un ancho explícito 
+    La anchura fija es una solución muy cómoda para el diseñador ya que permite ubicar con precisión los distintos elementos (cabeceras, barras laterales y pies de página). Además aporta un esqueleto robusto para otros elementos, como la anchura de párrafo o el posicionamiento de imágenes cuando éstas aparecen en gran número
+    Estas estructuras son adecuadas para la web porque permiten el reposicionamiento en pantalla de textos e imágenes. 
+    
+    El elemento <div>: creación de una estructura CSS de dos columnas con anchura fija
+    
+    Podemos considerar al elemento  <div> como un contenedor genérico en el que podemos poner elementos relacionados entre sí de forma lógica. La apertura y cierre de etiquetas  <div> suele hacerse rodeando a otros elementos de la página, de forma que dichos elementos quedan anidados dentro del contenedor. Puedes tener en la misma página todos los elementos <div> que consideres necesarios y con frecuencia se utilizan para crear el armazón visual. Un elemento <div> suele llevar un atributo ID (con lo que adquiere un “nombre” explícito dentro de la página) o bien pertenecer a una clase CSS, utilizándose ambos como medio para aplicar al contenedor uno o más estilos CSS. El empleo de elementos <div> facilita a otras personas la identificación de las diversas secciones en que se subdivide la página y también nos ayuda a controlar y aplicar estilos en cada una de ellas.
+    
+    La propiedad float CSS
+    
+    La propiedad float en CSS hace posible que un texto pueda escribirse alrededor de una imagen. Este estilo ha sido tomado del diseño de imprenta, donde a este efecto se le llama “justificación” del texto. CSS consigue el mismo efecto haciendo que los elementos que siguen a un elemento “flotante” puedan rodearlo, cambiando su posición relativa con respecto a él. Este comportamiento también nos sirve para crear columnas en una página.
+    os únicos valores posibles para float son “left”, “right” y “none”. No se puede centrar un objeto utilizando esta propiedad.
+    Si queremos tener múltiples elementos flotantes dentro del mismo contenedor, el resultado es que se alinean entre sí. Este comportamiento se suele utilizar en ciertas funciones habituales de las páginas web, como por ejemplo los menús horizontales o las galerías de imágenes.
+    
+    La propiedad clear
+    
+    Cuando añadimos la propiedad CSS clear a un objeto, le estamos indicando una regla que dice “no admito elementos flotantes a mi lado”. Podemos especificar si queremos que no haya elementos flotantes a la izquierda, a la derecha o en ambos lados. En el caso del pie de página, queremos eliminarlos de ambos lados.
+    
+    Creación de un menú de navegación basado en listas con “float”
+    
+    Los elementos de la lista dentro de este menú tendrán que ser flotantes para modificar la presentación vertical por defecto de las listas. Los menús de navegación CSS se utilizan mucho en el diseño basado en estándares porque se pueden actualizar y modificar de manera mu sencilla, y porque se basan en textos ( y no en imágenes), lo que mejora la accesibilidad en dispositivos como los lectores de pantalla, e incluso ayudan a mejorar el posicionamiento de nuestras páginas en los buscadores.
+    
+    Añadir estilos para el texto
+    
+    Cuando estamos diseñando la estructura de las páginas, el empleo de hojas de estilo internas es una cuestión de comodidad: resulta más sencillo para crear y modificar reglas si las tenemos dentro de la página y podemos llegar a ellas desplazando la ventana que si las tenemos en un archivo externo. 
+    
+    Repaso al uso de márgenes internos y externos
+    
+    Existen dos métodos para separar los elementos dentro de una página. El primero consiste en añadir margen interno (padding) al elemento div contenedor. En este caso la ventaja es que todos los elementos dentro de este div se ven afectados al mismo tiempo, es una solución rápida y eficiente. Su desventaja es que aumenta la anchura total del propio contenedor. Para compensar esta expansión, tenemos que dejar algo de espacio adicional a los lados. Este comportamiento puede generar cierta confusión y provocar que las páginas se restituyan incorrectamente si no tenemos cuidado.
+    El segundo método consiste en añadir márgenes externos a los elementos que están dentro del propio div. Su desventaja es que necesitamos más código y hay que prestar atención a los detalles, tenemos que ir viendo cómo se posicionan los elementos individualmente. Su ventaja es que el posicionamiento de la columna es más predecible, puesto que solo tenemos que tener en cuenta una anchura total.
+    Finalmente, conviene destacar que lo habitual es aplicar una combinación de ambos métodos en cualquier estructura de presentación. Por tanto, debes conocer bien el comportamiento y los efectos de cada uno de ellos.
+    
+    Ajuste fino de la estructura visual de la página
+    
+    Podemos aplicar colores de fondo y/o bordes a los elementos principales de nuestra estructura en las primeras fases del diseño, lo que nos ayudará a ver mejor sus límites. Después, si no queremos conservarlos, podemos eliminarlos y la estructura seguirá funcionando sin problemas.</p>
+
+
+    <h2>Que es un XML y para que sirve?</h2>
+    <p>XML es un formato de texto para almacenar e intercambiar datos estructurados, ya sean documentos, configuraciones, transacciones o simplemente datos. Es un lenguaje de marcado que define la estructura y el significado de los datos. Podemos decir que es un lenguaje optimizado para mejorar el uso de datos en internet. Mientras que HTML es responsable de los aspectos visuales de la información, XML es responsable de la información en sí misma y de cómo está estructurada, y básicamente brinda la posibilidad de definir un lenguaje de marcado apropiado para la aplicación con la que lo vamos a usar.</p>
+    <h2>¿Qué características tiene un documento HTML?</h2>
+    <p>HTML es un lenguaje de marcado que nos permite indicar la estructura de nuestro documento mediante etiquetas. Este lenguaje nos ofrece una gran adaptabilidad, una estructuración lógica y es fácil de interpre­tar tanto por humanos como por máquinas, ya que siguen un esquema de árbol donde existe un elemento raíz y donde el resto de etiquetas se insertan de manera lógica y estructurada. Además, se trata de un fichero de texto, y solo se necesita un editor como el bloc de notas para generar un documento HTML.
+        Todo lenguaje de marcado tiene una gramática que nos indica qué etiquetas se pueden utilizar, qué sig­nifican, cómo se relacionan entre ellas, etc. Es muy similar a las gramáticas de las lenguas humanas. Por ejemplo, la gramática española nos indica que un párrafo debe comenzar con mayúscula y finalizar con un punto y aparte. En HTML la gramática marca que un párrafo debe comenzar con la etiqueta <p> y finalizar con el cierre de la misma etiqueta (</p>). Las marcas de inicio y fin de párrafo son diferentes en castellano y en HTML, pero el significado es el mismo.</p>
+        <h2>Que es y para que sirve un archivo XHTML?</h2>
+        <p>XHTML fue diseñado para extender HTML y permitir la compatibilidad con nuevos formatos de datos como video, imágenes o lenguajes de secuencias de comandos. Dado que HTML siempre se ha basado en SGML y, por lo tanto, es relativamente complejo, se ha descubierto que los metalenguajes de marcado limitado, como XML, son suficientes para definir las capacidades estructurales y sintácticas básicas de XHTML. XHTML se usa para marcar contenido como texto, imágenes y enlaces en forma de hipervínculos para crear alguna estructura para que el navegador los muestre.</p>
+    <hr>
+
+
+
+    
+    <p></p>
+</body>
+</html>
