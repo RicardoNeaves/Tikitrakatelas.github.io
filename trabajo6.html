@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRABAJO 6</title>
+   
+</head>
+<body>
+<h1>NUESTRO DIBUJO</h1>
+<canvas width="520" height="360" style="border:1px solid black ;"></canvas>   
+<script type="text/javascript">
+    var lienzo = document.querySelector("canvas");
+
+
+    var ctx = lienzo.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+grd.addColorStop(0, "cyan");
+grd.addColorStop(1, "white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(0, 0, 1500, 500);
+
+
+var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+grd.addColorStop(0, "cyan");
+grd.addColorStop(1, "white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(30, 10, 800, 500);
+
+
+   var ctx = lienzo.getContext("2d");
+   
+   ctx.moveTo(150,150);
+   ctx.lineTo(200,270);
+   ctx.stroke();
+   ctx.strokeStyle = "brown";
+   ctx.fill();
+   ctx.moveTo(300,150);
+   ctx.lineTo(200,270);
+   ctx.stroke();
+   ctx.fill();
+  
+   ctx.moveTo(300,150);
+   ctx.lineTo(150,150);
+   ctx.stroke();
+   ctx.fill();
+   
+ 
+   
+   var ctx1 = lienzo.getContext("2d");
+   ctx1.fillStyle ="yellow";
+   ctx1.beginPath();
+ctx1.arc(185, 110, 40, 0, 2 * Math.PI);
+ctx1.stroke();
+ctx1.fill();
+ctx.strokeStyle ="pink";
+
+
+   ctx1.beginPath();
+ctx1.arc(270, 110, 40, 0, 2 * Math.PI);
+ctx1.fillStyle ="pink";
+ctx1.stroke();
+ctx1.fill();
+ctx.strokeStyle ="brown";
+ctx1.fillStyle ="brown";
+   ctx1.beginPath();
+ctx1.arc(225, 40, 40, 0, 2 * Math.PI);
+ctx1.stroke();
+ctx1.fill();
+
+
+    </script> 
+
+    <hr>
+
+    <h2>CONCLUSIONES</h2>
+    <h3>María Fernanda Guerrero García 2009020</h3>
+    <p>En esta práctica supimos utilizar el lenguaje Java, para crear representaciones gráficas y así utilizarlos de manera dinámica para acomodarlos y darle forma en este lenguaje, aunque no sabíamos usarlo, prácticamente estuvo sencillo aunque batallamos un poco, en fin de cuenta se logró la práctica</p>
+    <h3>Mariana Cecilia Vaquera Cuellar 2018561</h3>
+    <p>Para la elaboración de esta práctica, fueron claves nuestros conocimientos en JavaScript, para que con su ayuda, nuestro código de HTML pudiera adquirir características de este lenguaje  y así nuestro Canvas resultará con una codificación más fácil y con una mejor presentación.</p>
+    <h3>Ricardo Javier Neaves Villarreal 1994072</h3>
+    <p>La utilizacion de Java script en esta practica hizo mas complicado el diseño de la misma, ya que tuvimos que investigar mas acerca del tema, con los anteriores ejercicios html fue mas sencillo lograrlo, mas sin embargo estuvo mas complicado esta ves</p>
+
+</body>
+</html>
