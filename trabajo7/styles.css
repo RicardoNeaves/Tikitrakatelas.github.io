@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-color: #ee5522;
+    background-image:ur1("data:image/svg+xml,x3Csvg xmins-'http://www.w3.org/");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.main-container{
+    border: 2px solid white;
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+h1, h2{
+    text-align: center;
+}
+.draggable-elements,.droppable-elements{
+    border: 2px solid Oblack;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 24px;
+    min-height: 230px;
+}
+.names {
+    border: 3px dashed brown;
+    min-width: 100px;
+    padding: 0 10px;
+    height: 100px;
+    display: grid;
+    place-content: center;
+}
+.image{
+    width: 120px;
+}
+.wrong{
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
